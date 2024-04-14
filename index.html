@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Math Vector and Algebras</title>
+</head>
+<body>
+    <h4>Matrix Math Vector and Algebras</h4>
+    <hr/>
+    <ul class="#menu">
+        <u>
+            <li class="#1"><a href="http://localhost/gnu-admin/">I.
+                Introduction</a></li><br/>
+                <ol><li class="#2"><a href="http://localhost/gnu-admin/matrix/gnu/bin/admin/static/coherent/">II.
+                    Vector Coherent state representations</a></li><br/>
+                    <li><a href="http://localhost/gnu-admin/matrix/gnu/bin/admin/static/states/">A.
+                        Highest grade states for an so(5) irrep</a></li><br/>
+                        
+                    <li><a href="http://localhost/gnu-admin/matrix/gnu/bin/admin/static/represent/rep/">B.
+                        Holomorphic VCS wave representations</a></li><br/>
+                        <li><a href="http://localhost/gnu-admin/matrix/gnu/bin/admin/holomorphic/waves/reps/">C.
+                            VCS wave functions in an SO(3)-coupled basis</a></li><br/></ol>
+                            
+                            <li><a href="http://localhost/gnu-admin/matrix/gnu/bin/admin/bellow/">III.REPRESENTATION SPACES FOR so(5)<br/>
+                A.A subspace of harmonic oscillator states</a></li><br/>
+                <ol><li><a href="http://localhost/gnu-admin/matrix/gnu/bin/admin/holomorphic/waves/func/">B.
+                    A model space of VCS wave functions</a></li><br/>
+                    <li><a href="http://localhost/gnu-admin/matrix/gnu/bin/admin/base/algebras/">IV.
+                        BASES FOR THE so(5) LIE ALGEBRA</a></li><br/>
+                    <li><a href="http://localhost/gnu-admin/matrix/gnu/bin/admin/base/tensor/">B.
+                        An SO(3) tensor basis</a></li><br/>     
+
+
+                
+                
+                </ol>
+
+                
+        </u>
+
+    </ul>
+    <h2>Vector coherent state theory of the generic representations of so(5) in an so(3) basis</h2>
+    <p>P.S. Turner†∗, D.J. Rowe†, and J. Repka§
+        †Department of Physics, University of Toronto, Toronto, Ontario M5S 1A7, Canada
+        §Department of Mathematics, University of Toronto, Toronto, Ontario M5S 2E4, Canada
+        (Dated: 09 November 2005)</h3>
+    <h3>Abstract</h3>    
+    <p>For applications of group theory in quantum mechanics, one generally needs explicit matrix repre-
+        sentations of the spectrum generating algebras that arise in bases that reduce the symmetry group of
+        some Hamiltonian of interest. Here we use vector coherent state techniques to develop an algorithm
+        for constructing the matrices for arbitrary finite-dimensional irreps of the SO(5) Lie algebra in an
+        SO(3) basis. The SO(3) subgroup of SO(5) is defined by regarding SO(5) as linear transformations
+        of the five-dimensional space of an SO(3) irrep of angular momentum two. A need for such irreps
+        arises in the nuclear collective model of quadrupole vibrations and rotations. The algorithm has
+        been implemented in MAPLE, and some tables of results are presented.</p>
+    <h4 class="#1">I.
+        INTRODUCTION</h4>
+        <p>A vector coherent state (VCS) representation is a representation of a group (or Lie algebra) on a space of vector-
+            valued functions. It is a representation induced from a multi-dimensional representation of a subgroup. Such rep-
+            resentations have been used widely in the construction of explicit representations of Lie algebras and Lie groups
+            [1, 2, 3, 4, 5, 6], in the construction of shift tensors [7], and for the computation of Clebsch-Gordan coefficients for
+            reducing tensor product representations [8, 9].</p>
+            <p>The VCS construction for a representation of a group G involves two subgroups which play quite different roles.
+                A so-called “intrinsic” subgroup (sometimes called the “core” subgroup) acts in a known way on a subspace of the
+                representation of interest. A second “orbiter” subgroup acts upon this subspace to generate the larger representation
+                of the group G. A prototypical example of the construction is that for the dynamical group of the rigid rotor given
+                by the semi-direct product G = R5 ⋉SO(3) of an intrinsic R5 subgroup, which describes the quadrupole moments
+                (hence the shape) of an object, and an orbiter group SO(3), corresponding to physical rotations of the object, which
+                describes its possible orientations. The quantum mechanics of such a rotor are then described by the unitary irreducible
+                representations (irreps) of G.</p>
+                <p>The key requirement is that the Lie algebras of the intrinsic and orbiter groups, together with those elements
+                    of the complexified Lie algebra gC of G which leave the intrinsic space invariant, span the complex extension of
+                    the Lie algebra. Finding such groups is often easier in the complex extension of G. In many cases there are then
+                    mathematically naturally choices of intrinsic and orbiter subgroups for which the VCS construction of an induced
+                    representation is straightforward. Unfortunately a mathematically natural choice often produces a representation in a
+                    basis which is not adapted to the symmetries of a physical problem. A goal of this paper is to show how to construct
+                    representations of so(5) in a basis which reduces a physically relevant so(3) ⊂ so(5) subalgebra.</p>
+        <p>resentations of so(5) in a basis which reduces a physically relevant so(3) ⊂ so(5) subalgebra.
+            The group SO(5) and its Lie algebra so(5) arise in many physical contexts. For example, they are needed for
+            the classification of states in the Bohr-Mottelson model [11] and Interacting Boson model [12] of nuclear collective
+            states. They arise in a charge-independent pairing theory and in the use of isospin for the classification of nuclear
+            shell model basis states [13, 14].</p>
+            <p>They have also been used for the study of algebraic many-body equations of motion
+                methods [15] and high-temperature superconductivity [16]. Depending on the context, so(5) irreps may be required
+                in an su(2) (e.g., isospin) or an so(3) (angular momentum) basis. The isospin su(2) algebra is embedded in so(5) as
+                a subalgebra su(2) ⊂ su(2) × su(2) ∼
+                = so(4) ⊂ so(5). Thus, the requirement.</p>
+                <p>Thus, the required so(5) ⊃ su(2) irreps are given in a basis that
+                    reduces the Gel’fand chain SO(5) ⊃ SO(4) ⊃ SO(3) ⊃ SO(2) [17]. Such irreps were constructed years ago [14, 18]
+                    and reconstructed more simply by VCS methods in Refs. [3, 19]. Note, however, that the so(3) ⊂ so(4) subalgebra
+                    of the SO(3) group in the Gel’fand chain is not the same as the above-mentioned angular momentum algebra which
+                    generates a “geometrical” SO(3) ⊂ SO(5) subgroup of rotations of an associated three-dimensional space; as a result
+                    the construction of so(5) irreps in an angular-momentum basis is more challenging</p>
+                    <p>The so-called one-rowed representations that occur in the decomposition of the Hilbert space of the 5-dimensional
+                        harmonic oscillator can be inferred in an so(3) basis from the results of Chaćon, Moshinsky and others [20] or from the
+                        SO(5) hyperspherical harmonics and Clebsch-Gordan coefficients given in Ref. [21]. An explicit VCS (vector coherent
+                        state) construction of irreps with highest weights of the type (v, 0) and (0, f ) (this notation is explained below) was
+                        ∗</p>    
+        <hr/>
+        <p>Current address: Institute for Quantum Information Science, University of Calgary, Calgary, Alberta T2N 1N4, Canada</p>                        
+        <p>In this paper we give a systematic construction of the generic (v, f ) irreps in an so(3) basis. In addition to its
+            obvious relevance to the representation theory of so(5), the construction is a prototype for a relatively sophisticated
+            application of VCS theory.</p>  
+</body>
+</html>
